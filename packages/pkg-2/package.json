@@ -1,7 +1,0 @@
-{
-  "name": "pkg-2",
-  "version": "1.0.0",
-  "dependencies": {
-    "is-promise": "^2.2.2"
-  }
-}
