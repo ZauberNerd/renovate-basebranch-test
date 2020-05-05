@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "baseBranches": ["master", "next", "old"],
+  "packageRules": [
+    {
+      "baseBranchList": "old",
+      "major": { "enabled": false },
+      "minor": { "enabled": false }
+    }
+  ]
+}
