@@ -1,7 +1,7 @@
 {
-  "name": "pkg-2",
+  "name": "pkg-3",
   "version": "1.0.0",
   "dependencies": {
-    "is-promise": "^4.0.0"
+    "mixinable": "5.0.0"
   }
 }
