@@ -1,0 +1,32 @@
+{
+  "extends": [
+    ":prNotPending",
+    ":prHourlyLimit2",
+    ":prConcurrentLimit20",
+    ":separateMajorReleases",
+    ":combinePatchMinorReleases",
+    ":ignoreUnstable",
+    ":renovatePrefix",
+    ":semanticCommits",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":updateNotScheduled",
+    ":automergeDisabled",
+    ":ignoreModulesAndTests",
+    ":maintainLockFilesWeekly",
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor"
+  ],
+  "prCreation": "immediate",
+  "baseBranches": ["master", "next", "old"],
+  "postUpdateOptions": [
+    "yarnDedupeHighest"
+  ],
+  "packageRules": [
+    {
+      "baseBranchList": "old",
+      "major": { "enabled": false },
+      "minor": { "enabled": false }
+    }
+  ]
+}
